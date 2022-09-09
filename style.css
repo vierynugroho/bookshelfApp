@@ -1,0 +1,377 @@
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HEADER */
+header {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  width: 100vw;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+}
+
+header p {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+/* END HEADER */
+
+/* MAIN */
+
+main {
+  /* display: flex; */
+  /* position: relative; */
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.mainElemen {
+  display: flex;
+  width: 80vw;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.5em;
+  border: 2px solid #333;
+  padding: 5px;
+  margin: 10px 2px;
+  border-radius: 5px;
+}
+
+.elemen {
+  display: flex;
+  flex-direction: column;
+}
+
+.elemenParent {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  /* position: relative; */
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 5px;
+  width: 50%;
+}
+
+.elemenChild {
+  display: flex;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.sudahDibaca,
+.belumDibaca {
+  border: 2px solid #333;
+  border-radius: 5px;
+  margin-right: 1%;
+  margin-bottom: 1%;
+  width: 46%;
+  height: 200px;
+  padding: 1%;
+  overflow-y: auto;
+}
+
+.elemen input {
+  padding: 9px;
+  margin: 5px;
+  margin-bottom: 8px;
+}
+
+.note {
+  text-align: justify;
+  margin: 5px;
+}
+
+.task {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 2px;
+  border-radius: 5px;
+  background-color: rgb(236, 227, 227);
+}
+
+.deadline {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+.checkButton {
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.btnSubmit,
+.btnSimpan {
+  padding: 9px;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.disabled {
+  text-decoration: line-through;
+}
+
+h3 {
+  background-color: red;
+  color: white;
+}
+
+#credit {
+  position: relative;
+  text-align: center;
+  font-size: 0.7em;
+  color: red;
+  font-weight: bold;
+  border: 1px solid red;
+  border-radius: 10px;
+  padding: 2px 5px;
+  margin: 5px;
+}
+
+.belumDibaca h3,
+.sudahDibaca h3 {
+  font-size: 1em;
+}
+
+.bukuItem {
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.bukuItem {
+  background-color: rgb(238, 235, 235);
+  margin: 5px;
+}
+
+.bukuItem:nth-child(even) {
+  background-color: rgb(236, 231, 231);
+}
+
+button {
+  margin: 2px;
+}
+
+.checkButton,
+.undoButton,
+.editButton,
+.trashButton {
+  padding: 2px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  width: 47%;
+}
+
+.checkButton,
+.undoButton {
+  width: 96%;
+  background-color: rgb(107, 170, 12);
+}
+
+.trashButton {
+  background-color: red;
+}
+
+.editButton {
+  background-color: blue;
+}
+
+.searchBook {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  width: 96%;
+  margin-top: 10px;
+}
+
+.searchBook input {
+  font-size: 1em;
+  padding: 4px;
+}
+
+.searchArea {
+  position: relative;
+  margin: 10px;
+}
+
+.searchBook label {
+  width: 80px;
+  flex-direction: row;
+  text-align: center;
+  padding: 3px;
+  border-radius: 5px;
+  border: 1px solid red;
+}
+
+#btnSearch,
+#btnHapusSearch {
+  color: white;
+  background-color: red;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+/* EDIT MODAL */
+
+.modalEdit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.editContainer {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  top: 30%;
+  background-color: white;
+  display: none;
+}
+
+#exit {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 50px 50px;
+  border: 1px solid;
+  padding: 3px 9px;
+  font-weight: bold;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+.blur {
+  filter: blur(2px);
+}
+
+/* END EDIT */
+/* END MAIN */
+
+@media screen and (max-width: 838px) {
+  .elemenParent {
+    width: 60%;
+    left: 10px;
+  }
+
+  .elemenChild {
+    width: 60%;
+  }
+  .sudahDibaca,
+  .belumDibaca {
+    border: 1px solid #333;
+    width: 90%;
+  }
+
+  .searchBook {
+    width: 88%;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .mainElemen {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    /* background-color: cadetblue; */
+  }
+
+  .elemenChild {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sudahDibaca,
+  .belumDibaca {
+    border: 1px solid #333;
+    width: 80%;
+  }
+
+  .searchBook {
+    width: 80%;
+  }
+
+  .editContainer {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .mainElemen {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    /* background-color: cadetblue; */
+  }
+
+  .elemenParent {
+    width: 70vw;
+  }
+
+  .elemenChild {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sudahDibaca,
+  .belumDibaca {
+    border: 1px solid #333;
+    width: 80%;
+  }
+
+  .searchBook {
+    width: 80%;
+  }
+
+  .editContainer {
+    width: 80vw;
+  }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODOLIST | Viery</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/Viery_Nugroho.png">
+    <!-- SweetAlert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+<!------ Assalamualaikum ------->
+<!------- HAYOLOOOOOOOO -------->
+<!--- MAU NGAPAIN ANDAAA?!! --->
+<!------------------------------>
+    <!-- Gapapa deng -->
+<!-- Semoga Bermanfaat ya... -->
+<!------------------------------>
+<!-- Terimakasih ... :) -->
+  
+<!-- 
+    Best 
+        Viery Nugroho
+-->
+    <header>
+      <h2>OUR TODO LIST</h2>
+      <p>Save Our Life</p>
+    </header>
+    <main>
+      <div class="mainElemen">
+      <div class="elemenParent inputBuku">
+        <h3>Input Task</h3>
+        <form id="form">
+          <div class="elemen inputBox">
+            <label for="judulBuku" id="input-label">Task</label>
+            <input type="text" id="judulBuku" class="inputJudul" />
+            <label for="author" id="label">Note</label>
+            <input type="text" id="author" class="inputAuthor" />
+            <label for="tahunBuku" id="label">Deadline</label>
+            <input type="text" id="tahunBuku" class="inputTahun" />
+            <!-- Button isCompleted -->
+            <div class="isComplete">
+              <input type="checkbox" id="isCompleted" />
+              <label for="isCompleted">Complete</label>
+            </div>
+            <button type="submit" name="submit" class="btnSubmit">Add</button>
+            <p id="credit">Credit | VieryN</p>
+          </div>
+        </form>
+      </div>
+
+      <div class="elemenChild">
+        <div class="belumDibaca">
+          <h3>Uncompleted Task</h3>
+          <div class="buku-item" id="buku"></div>
+          <!-- Judul Buku -->
+          <!-- Penulis Buku -->
+          <!-- Tahun Buku -->
+
+          <!-- Selesai Dibaca  -->
+          <!-- Edit Buku -->
+          <!-- Hapus Buku -->
+        </div>
+        <div class="sudahDibaca">
+          <h3>Completed Task</h3>
+          <div class="buku-item" id="sudahDibaca"></div>
+          <!-- Judul Buku -->
+          <!-- Penulis Buku -->
+          <!-- Tahun Buku -->
+
+          <!-- Selesai Dibaca  -->
+          <!-- Edit Buku -->
+          <!-- Hapus Buku -->
+        </div>
+        <!-- Search -->
+        <div class="searchBook">
+          <h3>Search Task</h3>
+          <input type="search" name="cariBuku" id="cariBuku" class="searchArea" />
+          <div class="searchArea">
+            <label for="cariBuku" id="btnSearch">Search</label>
+            <label for="cariBuku" id="btnHapusSearch">Clear</label>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="modalEdit">
+        <div class="editContainer">
+            <form id="formEdit">
+            <h3>Edit Task</h3>
+              <div class="elemen inputBox">
+                <span id="exit">x</span>
+                <label for="judulBaru" id="input-label">Task</label>
+                <input type="text" name="judulBuku" id="judulBaru" class="inputJudulBaru" /><br />
+
+                <label for="authorBaru" id="label">Note</label>
+                <input type="text" name="author" id="authorBaru" class="inputAuthorBaru" /><br />
+                
+                <label for="tahunBaru" id="label">Deadline</label>
+                <input type="text" name="tahunBuku" id="tahunBaru" class="inputTahunBaru" /><br />
+                <input type="submit" value="Save" name="submit" class="btnSimpan" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>       <!-- Main ELemen END -->
+    </main>
+    <!-- Javascript -->
+    <script src="script.js"></script>
+  </body>
+</html>
